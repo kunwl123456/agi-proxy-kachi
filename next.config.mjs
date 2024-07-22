@@ -4,12 +4,16 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/(.*)",
-        destination: "/api/wikipedia"
-      },
-      {
         source: "/v1/(.*)",
         destination: "/api/proxy",
+      },
+      {
+        source: "/",
+        destination: "/api/proxy"
+      },
+      {
+        source: "/(.*)",
+        destination: "/api/proxy"
       }
     ];
   },
