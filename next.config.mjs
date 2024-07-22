@@ -6,14 +6,6 @@ const nextConfig = {
       {
         source: "/v1/(.*)",
         destination: "/api/proxy",
-      },
-      {
-        source: "/",
-        destination: "/api/wikipedia"
-      },
-      {
-        source: "/(.*)",
-        destination: "/api/wikipedia"
       }
     ];
   },
